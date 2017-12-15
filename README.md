@@ -17,3 +17,9 @@ brew install boost --c++11
 in order to use many of the features of C++11.  In general that post notes that for macOS libraries must be compiled using `-stdlib=libc++`.  (See [this issue](https://github.com/Homebrew/brew/issues/139) for other issues that might arise for Boost installation, as well as [this other discussion](https://github.com/Homebrew/legacy-homebrew/issues/25986).)
 
 As a reference for Make, see [this short tutorial](http://www.cs.colby.edu/maxwell/courses/tutorials/maketutor/).
+
+Installation instructions for the [BEAGLE](https://github.com/beagle-dev/beagle-lib) library on macOS can be found [here](https://github.com/beagle-dev/beagle-lib/wiki/MacInstallInstructions).  But I'm a little more enthusiastic about [trying it with Homebrew](https://github.com/Homebrew/homebrew-science/blob/master/beagle.rb) (see also [here](http://braumeister.org/repos/Homebrew/homebrew-science/formula/beagle)).
+
+```
+brew install beagle # also installs doxygen
+```

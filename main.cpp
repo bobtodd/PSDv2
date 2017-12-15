@@ -1,5 +1,6 @@
 #include <iostream>
 #include <boost/config.hpp>
+#include <beagle/GP.hpp>
 
 using namespace std;
 
