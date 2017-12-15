@@ -15,3 +15,5 @@ brew install boost --c++11
 ```
 
 in order to use many of the features of C++11.  In general that post notes that for macOS libraries must be compiled using `-stdlib=libc++`.  (See [this issue](https://github.com/Homebrew/brew/issues/139) for other issues that might arise for Boost installation, as well as [this other discussion](https://github.com/Homebrew/legacy-homebrew/issues/25986).)
+
+As a reference for Make, see [this short tutorial](http://www.cs.colby.edu/maxwell/courses/tutorials/maketutor/).
