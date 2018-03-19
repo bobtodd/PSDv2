@@ -70,3 +70,16 @@ The tutorial recommends putting the zip file in a folder `Documents/libraries/`,
 
 
 But I'm not sure that's exactly what I'd like to do.
+
+...
+
+...
+
+### Eigen Library
+
+Next we need to install the [Eigen]() library.  This *does* have a [Homebrew formula](http://brewformulas.org/Eigen), so we can simply type the following.
+
+```
+brew install eigen
+```
+
