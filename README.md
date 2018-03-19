@@ -23,3 +23,29 @@ Installation instructions for the [BEAGLE](https://github.com/beagle-dev/beagle-
 ```
 brew install beagle # also installs doxygen
 ```
+
+Using the recommendations of [this StackOverflow thread](https://stackoverflow.com/questions/34340578/installing-c-libraries-on-os-x), we can write
+
+```
+pkg-config --cflags hmsbeagle-1
+```
+
+to get the location of the header (i.e. include) files, and
+
+```
+pkg-config --libs hmsbeagle-1
+```
+
+to get the information for the linker.  We can then try compiling using the combined command
+
+```
+g++ $(pkg-config --cflags --libs hmsbeagle-1) main.cpp -o test
+```
+
+To invoke the library within a program, add the following line:
+
+```c++
+#include "libhmsbeagle/beagle.h"
+```
+
+as we can see from the `tinytest.cpp` file in the [`beagle-lib` GitHub repo](https://github.com/beagle-dev/beagle-lib/blob/master/examples/tinytest/tinytest.cpp).
